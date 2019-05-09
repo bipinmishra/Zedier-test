@@ -1,0 +1,22 @@
+
+
+<div class="container">
+
+    <!-- <div class="form-group">
+        <label for="exampleFormControlSelect1">Select Holiday</label>
+        <select class="form-control" id="exampleFormControlSelect1" (change)="selectCountry($event.target.value)" >
+          <option value="-1">Select any option </option>
+          <option *ngFor="let country of countryListName " value="{{country.alpha}}">{{country.name}} </option>
+        </select>
+      </div> -->
+     <div class="select-button"> Select any options </div>
+      <div class="select-box">
+            <input type="text" id="myInput" class="form-control rounded-0" (input)="myFunction()" placeholder="Search for names.." title="Type in a name">
+            <ul id="myUL" class="list-holder">
+                  <li *ngFor="let country of countryListName " value="{{country.alpha}}"><a> {{country.name}} </a></li>
+            </ul>
+     </div>
+
+
+</div>
+
